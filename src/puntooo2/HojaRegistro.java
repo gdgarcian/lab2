@@ -1,22 +1,24 @@
 
-package puntoo2;
+package puntooo2;
 
 
 public class HojaRegistro {
     
-    private String lineaProduccion;
-    private String supervisor;
+    private int linea;
+    private String producto;
+    private Supervisor supervisor;
     private String fecha;
     private String numeroTrabajo;
     private String diaSemana;
-    private String inicioSerie;
-    private String finalSerie;
+    private int inicioSerie;
+    private int finalSerie;
     private String informeProblema;
-    private String tiempoProblema;
+    private int tiempoProblema;
     private int cantidadProducida;
 
-    public HojaRegistro(String lineaProduccion, String supervisor, String fecha, String numeroTrabajo, String diaSemana, String inicioSerie, String finalSerie, String informeProblema, String tiempoProblema, int cantidadProducida) {
-        this.lineaProduccion = lineaProduccion;
+    public HojaRegistro(int linea, String producto, Supervisor supervisor, String fecha, String numeroTrabajo, String diaSemana, int inicioSerie, int finalSerie, String informeProblema, int tiempoProblema, int cantidadProducida) {
+        this.linea = linea;
+        this.producto = producto;
         this.supervisor = supervisor;
         this.fecha = fecha;
         this.numeroTrabajo = numeroTrabajo;
@@ -27,21 +29,28 @@ public class HojaRegistro {
         this.tiempoProblema = tiempoProblema;
         this.cantidadProducida = cantidadProducida;
     }    
-    
-    
-    public String getLineaProduccion() {
-        return lineaProduccion;
+
+    public int getLinea() {
+        return linea;
     }
 
-    public void setLineaProduccion(String lineaProduccion) {
-        this.lineaProduccion = lineaProduccion;
+    public void setLinea(int linea) {
+        this.linea = linea;
     }
 
-    public String getSupervisor() {
+    public String getProducto() {
+        return producto;
+    }
+
+    public void setProducto(String producto) {
+        this.producto = producto;
+    }
+
+    public Supervisor getSupervisor() {
         return supervisor;
     }
 
-    public void setSupervisor(String supervisor) {
+    public void setSupervisor(Supervisor supervisor) {
         this.supervisor = supervisor;
     }
 
@@ -69,19 +78,19 @@ public class HojaRegistro {
         this.diaSemana = diaSemana;
     }
 
-    public String getInicioSerie() {
+    public int getInicioSerie() {
         return inicioSerie;
     }
 
-    public void setInicioSerie(String inicioSerie) {
+    public void setInicioSerie(int inicioSerie) {
         this.inicioSerie = inicioSerie;
     }
 
-    public String getFinalSerie() {
+    public int getFinalSerie() {
         return finalSerie;
     }
 
-    public void setFinalSerie(String finalSerie) {
+    public void setFinalSerie(int finalSerie) {
         this.finalSerie = finalSerie;
     }
 
@@ -93,11 +102,11 @@ public class HojaRegistro {
         this.informeProblema = informeProblema;
     }
 
-    public String getTiempoProblema() {
+    public int getTiempoProblema() {
         return tiempoProblema;
     }
 
-    public void setTiempoProblema(String tiempoProblema) {
+    public void setTiempoProblema(int tiempoProblema) {
         this.tiempoProblema = tiempoProblema;
     }
 

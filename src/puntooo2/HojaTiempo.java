@@ -1,5 +1,5 @@
 
-package puntoo2;
+package puntooo2;
 
 
 public class HojaTiempo {
